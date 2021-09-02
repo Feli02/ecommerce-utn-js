@@ -1,0 +1,113 @@
+#title-aboutUs {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#container-main-info-us{
+    background: #645BB5;
+    padding: 20px;
+    margin: 10px 30px 50px 30px;
+    height: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#img-aboutUS{
+    border-radius: 10px;
+}
+
+#container-office {
+    background: #645BB5;
+    padding: 20px;
+    margin: 10px 30px 50px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitle{
+    text-align: center;
+}
+
+#inside-title{
+    margin-bottom: 15px;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+#social-media{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 10px 30px 50px 30px;
+}
+
+.social-container{
+    background: #645BB5;
+    width: 150px;
+    height: 120px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon {
+    font-size: 60px;
+    color: black;
+}
+
+.title-social-media{
+    margin-top: 10px;
+    color: white;
+}
+
+.social-container:hover{
+    transform: scale(1.3);
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width:599px){
+    #container-main-info-us {
+        height: fit-content;
+        flex-direction: column;
+        text-align: center;
+    }
+    #img-aboutUS {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    aside#main-info-aboutUs, #inside-title {
+        font-size: 17px;
+    }
+    #title-aboutUs {
+        font-size: 30px;
+    }
+    iframe {
+        width: 100%;
+    }
+    .subtitle {
+        font-size: 25px;
+    }
+    #social-media {
+        justify-content: space-between;
+        margin-top: 15px;
+        padding: 0;
+        margin: 0;
+    }
+    .icon {
+        font-size: 40px;
+    }
+    .social-container {
+        width: 95px;
+        height: fit-content;
+    }
+}

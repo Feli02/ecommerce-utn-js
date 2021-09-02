@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1046a69400.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/styleRegisterLogin.css">
+    <link rel="shortcut icon" href="./images/logo/favicon.png" type="image/x-icon">
+    <title>Creando Cuenta | Tienda FB</title>
+</head>
+<body>
+    <div id="contenedor">
+        <header id="header">
+            <a href="index.html"><img class="logo" src="./images/logo/logo_transparent-final.jpg"></a>
+            <nav id="nav-bar">
+                <div id="search-container">
+                    <form action="GET" id="search-bar-form">
+                        <input type="search" name="search" id="search-bar" placeholder="Buscá todo lo que necesites">
+                        <button type="submit" id="search-bar-button"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <ul id="nav-list">
+                    <li><a href="register.html">Crear cuenta</a></li>
+                    <li><a href="login.html">Ingresá</a></li>
+                    <li><a href="profile.html">Perfil</a></li>
+                    <li><a href="cart.html">Carrito</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 id="register-title">Registro</h1>
+        
+        <form action="profile.html" method="POST" id="form-register">
+            <div class="input-container">
+                <label for="name" class="label-register">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Felipe" class="input-register">
+                <img class="icon-error" id="icon-error-name" src="icon-error.svg" alt="">
+                <p class="error-msg" id="name-error-msg">Ingrese un nombre correcto</p>
+            </div>
+            
+
+            <div class="input-container">
+                <label for="email"  class="label-register">Email</label>
+                <input type="email" name="email" id="email" placeholder="felipe@gmail.com" class="input-register">
+                <img class="icon-error" id="icon-error-email" src="icon-error.svg" alt="">
+                <p class="error-msg" id="email-error-msg">Ingrese un formato de email correcto</p>
+            </div>
+            
+
+            <div class="input-container">
+                <label for="password"  class="label-register">Contraseña</label>
+                <input type="password" name="password" id="password" placeholder="Debe tener 8 caracteres mínimo" class="input-register">
+                <img class="icon-error" id="icon-error-password" src="icon-error.svg" alt="">
+                <p class="error-msg" id="password-error-msg">Debe tener 8 caracteres mínimo</p>
+            </div>
+
+            <div class="input-container">
+                <label for="confirm-password"  class="label-register">Confirmar Contraseña</label>
+                <input type="password" name="confirm-password" placeholder="Repite la contraseña" id="confirm-password" class="input-register">
+                <img class="icon-error" id="icon-error-password-confirm" src="icon-error.svg" alt="">
+                <p class="error-msg" id="password-confirm-error-msg">Las contraseñas no coinciden</p>
+            </div>
+            
+            <button id="create-account-button" name="create-account-button"><label class="button-txt-register" for="create-account-button">Crear Cuenta</label></button>
+
+            <a class="linkToSignInSignUp" href="login.html">¿Ya tienes cuenta? Inicia Sesión</a>
+        </form>
+        </main>
+        <footer id="footer">
+            <img id="logo-footer" class="logo" src="./images/logo/logo_transparent-final.jpg">
+            <ul id="list-info-footer">
+                <li><a href="#">Contáctanos</a></li>
+                <li><a href="aboutUs.html">Sobre Nosotros</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </footer>
+    </div>
+<script src="./js/app.js"></script>
+</body>
+</html>

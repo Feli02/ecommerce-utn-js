@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1046a69400.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/profileStyle.css">
+    <link rel="shortcut icon" href="./images/logo/favicon.png" type="image/x-icon">
+    
+    <title>Perfil | Tienda FB</title>
+</head>
+<body>
+    <header id="header">
+        <a href="index.html"><img class="logo" src="./images/logo/logo_transparent-final.jpg"></a>
+        <nav id="nav-bar">
+            <div id="search-container">
+                <form action="GET" id="search-bar-form">
+                    <input type="search" name="search" id="search-bar" placeholder="Buscá todo lo que necesites">
+                    <button type="submit" id="search-bar-button"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <ul id="nav-list">
+                <li><a href="register.html">Crear cuenta</a></li>
+                <li><a href="login.html">Ingresá</a></li>
+                <li><a href="profile.html">Perfil</a></li>
+                <li><a href="cart.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Perfil</h1>
+
+        <form id="form-add-gusto">
+            <label class="label-input">
+                <input type="text" name="gusto" class="gusto-input" placeholder="Agregue un gusto">
+            </label>
+            <button id="btnAdd">Agregar</button>
+        </form>
+        <div id="gustos-container"></div>
+    </main>
+
+    <footer id="footer">
+        <img id="logo-footer" class="logo" src="./images/logo/logo_transparent-final.jpg">
+        <ul id="list-info-footer">
+            <li><a href="#">Contáctanos</a></li>
+            <li><a href="aboutUs.html">Sobre Nosotros</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="./js/gustos.js"></script>
+</html>

@@ -1,0 +1,132 @@
+#form-register, #form-login{
+    display: flex;
+    flex-direction: column;
+    background: #645BB5;
+    padding: 50px;
+    height: fit-content;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
+
+#header {
+    margin-bottom: 0px;
+}
+
+.input-container{
+    margin: 15px auto;
+    width: 300px;
+    position: relative;
+}
+
+h1#register-title {
+    text-align: center;
+    margin: 20px;
+}
+
+.label-register{
+    border-radius: 5px;
+    color: silver;
+    transition: 0.25s;
+    width: 190px;
+}
+
+.input-register{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    border-radius: 2px;
+    padding: 15px;
+    position: relative;
+}
+
+.icon-error {
+    position: absolute;
+    bottom: 33%;
+    right: 15px;
+}
+
+.error-msg{
+    color: hsl(0, 93%, 68%);
+    font-size: 0.7rem;
+    text-align: right;
+}
+
+.error-msg, .icon-error{
+    display: none;
+}
+
+.input-register:focus {
+    border: solid 3px #0a066e;
+}
+
+.label-register .input-register:focus{
+    color: #0a066e;
+}
+
+.linkToSignInSignUp{
+    color: black;
+    width: fit-content;
+    margin: 30px auto 0 auto;
+}
+
+.button-txt-register {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1d3557;
+    cursor: pointer;
+}
+
+button#create-account-button {
+    width: 50%;
+    margin: 15px auto;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    background: #f8f9fa;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:599px){
+    .button-txt-register {
+        font-size: 30px;
+    }
+    #form-register {
+        padding: 40px;
+        width: 100%;
+        margin-bottom: 90px;
+    }
+    .input-container {
+        width: 100%;
+    }
+    .label-register {
+        font-size: 23px;
+    }
+    .input-register {
+        height: 45px;
+        border-radius: 8px;
+    }
+    .button-txt-register {
+        font-size: 20px;
+    }
+    .linkToSignInSignUp {
+        font-size: 15px;
+    }
+    button#create-account-button {
+        width: 80%;
+    }
+}

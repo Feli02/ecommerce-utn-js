@@ -1,0 +1,28 @@
+#title-cart{
+    text-align: center;
+}
+
+#img-empty-cart{
+    width: 30%;
+}
+
+.container-empty-cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    text-align: center;
+    margin-top: 20px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
