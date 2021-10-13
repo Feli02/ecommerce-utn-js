@@ -18,6 +18,12 @@
     border-radius: 10px;
 }
 
+.buttons-container{
+    display: flex;
+    column-gap: 20px;
+    margin-top: 20px;
+}
+
 #container-office {
     background: #645BB5;
     padding: 20px;
@@ -26,6 +32,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.show{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+.btn-video{
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
 }
 
 .subtitle{

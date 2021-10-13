@@ -41,7 +41,18 @@
             <h2 class="subtitle">¿Estás buscando trabajo?</h2>
             <div id="container-office">
                 <h3 class="subtitle" id="inside-title">Conocé nuestras oficinas</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9FVDfbKH2Yw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                <video id="videoPlayer" width="500">
+                    <source src="images/RECEPCIONES_DE_OFICINA_MODERNAS_INNOMAC.mp4" type="video/mp4">
+                </video>
+                <div class="buttons-container">
+                    <button class="btn-video" onclick="playPause()">
+                        <i id="play-btn" class="fas fa-play show"></i>
+                        <i id="pause-btn" class="fas fa-pause hidden"></i>
+                    </button>
+                    <button class="btn-video" onclick="reload()"><i class="fas fa-redo-alt"></i></button>
+                    <button class="btn-video" onclick="makeLarge()"><i class="fas fa-expand"></i></button>
+                    <button class="btn-video" onclick="makeSmall()"><i class="fas fa-compress"></i></button>
+                </div>
             </div>
             
             <h2 class="subtitle">Nuestras Redes Sociales</h2>
@@ -71,5 +82,6 @@
                 <li><a href="#">Ayuda</a></li>
             </ul>
         </footer>
+        <script src="js/video.js"></script>
 </body>
 </html>
